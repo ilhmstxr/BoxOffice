@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:src="@drawable/fall_bg"/>
+            android:src="@drawable/fall_bg"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                     android:id="@+id/img1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    tools:src="@drawable/play_button"/>
+                    android:src="@drawable/playbutton"/>
 
                 <TextView
                     android:id="@+id/title1"
@@ -91,7 +91,7 @@
                     android:id="@+id/img2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    tools:src="@drawable/play_button"/>
+                    android:src="@drawable/playbutton"/>
 
                 <TextView
                     android:id="@+id/title2"
@@ -120,7 +120,20 @@
     </LinearLayout>
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/arrow_back_24px"
+        android:background="@drawable/circle_background"
+        />
+
         <ImageButton
+            android:id="@+id/favorite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="20dp"
